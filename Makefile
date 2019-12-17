@@ -2,6 +2,8 @@ HOST := 127.0.0.1
 PORT := 5000
 MODULE := main
 CALLABLE := app
+
+PYTHON := python
 LINTER := flake8
 TEST_RUNNER := pytest
 
@@ -9,7 +11,7 @@ SERVER := uvicorn
 SERVER_FLAGS := --host $(HOST) --port $(PORT) --reload --header server:sharify
 
 RM := rm -rf
-TEMP_FILES := instance htmlcov .coverage .pytest_cache
+TEMP_FILES := instance htmlcov .coverage .pytest_cache, *.egg-info
 
 all: test lint run
 run:
@@ -22,7 +24,7 @@ lint-test:
 	$(LINTER) tests --show-source --statistics
 
 test:
-	python -m $(TEST_RUNNER) -v
+	$(PYTHON) -m $(TEST_RUNNER) -v
 
 coverage:
 	coverage run --source app -m $(TEST_RUNNER)
