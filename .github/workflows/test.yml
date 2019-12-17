@@ -20,7 +20,11 @@ jobs:
         pip install -r requirements.txt
     
     - name: Lint with flake8
-      run: make lint
+      run: |
+        pip install flake8
+        make lint
     
     - name: Test with pytest
-      run: make test
+      run: |
+        pip install pytest
+        make test

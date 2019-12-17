@@ -2,9 +2,20 @@
 
 ![build shield](https://img.shields.io/github/workflow/status/afrigon/fastapi-template/Tests/master)
 
-This is a template project to build api using the [FastAPI](https://github.com/tiangolo/fastapi) library.
+This is a template project to build api using the [FastAPI](https://github.com/tiangolo/fastapi) framework.
 
 ## Start the application
+
+### Debug
+
+You'll need to setup the virtual environment using:
+
+```sh
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+pip install -r requirements-dev.txt
+```
 
 The run script will start the app with the `DEBUG` flag turned on.
 
@@ -22,7 +33,7 @@ docker-compose up --build
 
 ## Documentation
 
-FastAPI project are self documenting, visit`/docs`.
+FastAPI projects are self documenting, visit`/docs`.
 
 ## Code Quality
 
