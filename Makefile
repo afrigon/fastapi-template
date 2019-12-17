@@ -13,7 +13,7 @@ TEMP_FILES := instance htmlcov .coverage .pytest_cache
 
 all: test lint run
 run:
-	$(SERVER) $(MODULE):$(CALLABLE) $(SERVER_FLAGS)
+	APP_DEBUG=True $(SERVER) $(MODULE):$(CALLABLE) $(SERVER_FLAGS)
 
 lint: lint-app lint-test
 lint-app:
