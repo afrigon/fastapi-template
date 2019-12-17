@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from unittest.mock import MagicMock
 from app.routes import Router
 

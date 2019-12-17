@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 def test_whenGettingRoot_thenReturnsHelloWorld(client):
     r = client.get('/')
     data = r.json()
