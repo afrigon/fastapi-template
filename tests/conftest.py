@@ -1,5 +1,5 @@
 """
-Application fixtures to easily create app instaces
+Application fixtures to easily create app instances
 
 Examples:
     $ python -m pytest
