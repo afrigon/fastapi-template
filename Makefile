@@ -17,9 +17,9 @@ run:
 
 lint: lint-app lint-test
 lint-app:
-	$(LINTER) app
+	$(LINTER) app --show-source --statistics
 lint-test:
-	$(LINTER) tests
+	$(LINTER) tests --show-source --statistics
 
 test:
 	python -m $(TEST_RUNNER) -v

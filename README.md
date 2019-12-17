@@ -1,8 +1,10 @@
 # Fast API Template
 
-this is a template project to build api using the [FastAPI](https://github.com/tiangolo/fastapi) library.
+This is a template project to build api using the [FastAPI](https://github.com/tiangolo/fastapi) library.
 
 ## Start the application
+
+The run script will start the app with the `DEBUG` flag turned on.
 
 ```sh
 make run
@@ -16,7 +18,13 @@ The project can be started in production mode using docker-compose
 docker-compose up --build
 ```
 
-## Tests
+## Documentation
+
+FastAPI project are self documenting, visit`/docs`.
+
+## Code Quality
+
+### Tests
 
 `pytest` is used for testing.
 
@@ -24,12 +32,20 @@ docker-compose up --build
 make test
 ```
 
-## Lint
+### Lint
 
 `flake8` is used for linting.
 
 ```sh
 make lint
+```
+
+### Coverage
+
+The coverage script will create an html file in `./htmlcov` and output a minimal report.
+
+```sh
+make coverage
 ```
 
 ## License
