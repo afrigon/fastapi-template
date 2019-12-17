@@ -25,7 +25,7 @@ test:
 	python -m $(TEST_RUNNER) -v
 
 coverage:
-	coverage run -m $(TEST_RUNNER)
+	coverage run --source app -m $(TEST_RUNNER)
 	coverage html
 	coverage report
 
