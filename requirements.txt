@@ -3,7 +3,7 @@ certifi==2019.11.28
 chardet==3.0.4
 Click==7.0
 coverage==5.0
-dataclasses==0.7
+dataclasses==0.6
 entrypoints==0.3
 fastapi==0.45.0
 flake8==3.7.9
