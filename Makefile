@@ -3,7 +3,7 @@ PORT := 5000
 MODULE := main
 CALLABLE := app
 
-PYTHON := python3.6
+PYTHON := python
 LINTER := flake8
 TEST_RUNNER := pytest
 
