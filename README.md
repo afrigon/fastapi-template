@@ -1,6 +1,6 @@
 # Fast API Template
 
-(https://img.shields.io/github/workflow/status/afrigon/fastapi-template/Tests/master)
+![build shield](https://img.shields.io/github/workflow/status/afrigon/fastapi-template/Tests/master)
 
 This is a template project to build api using the [FastAPI](https://github.com/tiangolo/fastapi) library.
 
