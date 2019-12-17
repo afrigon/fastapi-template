@@ -3,6 +3,7 @@
 
 .env
 venv/
+venv-dev/
 
 *.pyc
 *.pyo
