@@ -9,16 +9,16 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     
-    - name: Set up Python 3.6
+    - name: Set up Python 3.7
       uses: actions/setup-python@v1
       with:
-        python-version: 3.6
+        python-version: 3.7
     
     - name: Install dependencies
       run: |
-        python3.6 -m pip install --upgrade pip
-        pip3.6 install -r requirements.txt
-        pip3.6 install -r requirements-dev.txt
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install -r requirements-dev.txt
     
     - name: Lint with flake8
       run: make lint
