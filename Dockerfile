@@ -1,6 +1,6 @@
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
 
-MAINTAINER Alexandre Frigon "sharify-docker@frigon.app"
+MAINTAINER Alexandre Frigon "fastapi-docker@frigon.app"
 
 RUN rm -rf /app
 WORKDIR /app

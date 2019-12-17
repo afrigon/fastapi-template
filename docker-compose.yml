@@ -3,7 +3,7 @@ version: "3.7"
 services:
     api:
         build: .
-        container_name: sharify-api
+        container_name: fast-api
         restart: always
         ports:
             - 5000:80
